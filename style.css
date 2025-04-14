@@ -116,6 +116,7 @@ body {
     flex-direction: column;
     gap: 15px;
     padding: 30px;
+    /* padding: auto; */
   }
   
   #hero_quickform input,
