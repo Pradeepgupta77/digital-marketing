@@ -379,6 +379,8 @@ body {
   border: none;
   border-radius: 50%;
   overflow: hidden;
+  padding: 15px;
+  border: 1px solid #ddd;
 }
 .testimonial_card_user_img img{
   width: 100%;
@@ -466,7 +468,7 @@ body {
   display: block;
 }
 .cashStudy_block img {
-  max-width: 1000px;
+  max-width: 1200px;
   width: 100%;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -505,13 +507,13 @@ body {
   text-align: center;
   margin-bottom: 30px;
 }
-.faq-heading .heading_3 {
+/* .faq-heading .heading_3 {
   margin-bottom: 10px;
   color: #000;
 }
 .faq-heading .heading_3 span {
   font-weight: 400;
-}
+} */
 .faq-heading .heading_2 {
   color: #b200b2;
 }
@@ -596,13 +598,16 @@ body {
   width: 100%;
   padding-bottom: 30px;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
 }
 .footer_con .footer_top .footer_top_logo{
-  width: 30%;
+  /* width: 30%; */
   display: flex;
   align-items: start;
+}
+.footer_top_logo img {
+  width: 220px;
 }
 .footer_top .footer_top_content{
   width: fit-content;
@@ -610,7 +615,23 @@ body {
   flex-direction: column;
   align-items: start;
 }
-
+.footer_bottom_right .boldpera,
+.footer_top_content .boldpera{
+  font-size: 16px !important;
+  margin-bottom: 5px;
+}
+.footer_top_content p a{
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+}
+.footer_top_content p a:hover{
+  color: #ff7a28;
+}
+.footer_bottom_left p{
+  font-size: 14px;
+  font-weight: 300;
+}
 .footer_con .footer_bottom{
   border-top: 1px solid #ddd;
   display: flex;
