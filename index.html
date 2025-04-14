@@ -95,9 +95,13 @@
                 />
 
                 <select id="contactService" required>
-                  <option value="">-- Select Service --</option>
-                  <option value="seo">SEO</option>
-                  <option value="smm">Social Media Marketing</option>
+                  option value="-- Select Service --">-- Select Service --</option>
+									<option value="Social Media Optimization">Social Media Optimization</option>
+									<option value="Search Engine Optimization">Search Engine Optimization</option>
+									<option value="Web Design and Development">Web Design and Development</option>
+									<option value="Pay Per Click(PPC)">Pay Per Click(PPC)</option>
+									<option value="Branding">Branding</option>
+									<option value="App Development">App Development</option>
                 </select>
 
                 <textarea
@@ -418,22 +422,37 @@
       <!-- cash study Start -->
       <section id="cashStudy" class="sec">
         <div class="container cashStudy_con">
-          <h2 class="heading_2">How Top Brands 10X Result with Us</h2>
-          <p class="normalpara">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, fuga?
-          </p>
-
+          <h2 class="heading_2">How Top Brands Drive 10X Results with Us</h2>
+          <p class="normalpara">Real businesses. Real growth. Real impact.</p>
+      
+          <!-- Tabs -->
           <div class="cashStudy_tab_con">
-                <div class="cashStudy_btn_con">
-                    <button class="normalBtn">Project Name</button>
-                    <button class="normalBtn">Project Name</button>
-                    <button class="normalBtn">Project Name</button>
-                    <button class="normalBtn">Project Name</button>
-                    <button class="normalBtn">Project Name</button>
-                </div>
+            <div class="cashStudy_btn_con">
+              <button class="normalBtn active" data-tab="skinnotion">Skinnotion</button>
+              <button class="normalBtn" data-tab="project2">Project 2</button>
+              <button class="normalBtn" data-tab="project3">Project 3</button>
+              <button class="normalBtn" data-tab="project4">Project 4</button>
+            </div>
+          </div>
+      
+          <!-- Case Study Blocks -->
+          <div class="cashStudy_blocks">
+            <div class="cashStudy_block active" id="skinnotion">
+              <img src="./assessts/info-graphics1.png" alt="Skinnotion Case Study">
+            </div>
+            <div class="cashStudy_block" id="project2">
+              <img src="assessts/info-graphics2.png" alt="Project 2 Case Study">
+            </div>
+            <div class="cashStudy_block" id="project3">
+              <img src="./assessts/info-graphics1.png" alt="Project 3 Case Study">
+            </div>
+            <div class="cashStudy_block" id="project4">
+              <img src="./assessts/info-graphics2.png" alt="Project 4 Case Study">
+            </div>
           </div>
         </div>
       </section>
+      
       <!-- cash study End -->
 
       <!-- Section  faq - start -->
@@ -454,52 +473,56 @@
 
           <div class="faq-item">
             <div class="faq-question">
-              1. What does a digital marketing agency do?
+              1. What is digital marketing and how can it benefit my business?
             </div>
             <div class="normalpara faq-answer">
-              A digital marketing agency helps businesses grow online by using
-              strategies like SEO, paid ads, content marketing, and social media
-              to attract customers and drive sales.
+              Digital marketing encompasses all online strategies aimed at promoting your business, including search engine optimization (SEO), social media marketing, email campaigns, and pay-per-click advertising. Implementing these strategies can increase your brand's online visibility, attract targeted traffic, and ultimately boost sales and customer engagement.​
+
             </div>
           </div>
 
           <div class="faq-item">
             <div class="faq-question">
-              2. Why should my business hire a digital marketing agency?
+              2. Which digital marketing services do you offer?
             </div>
             <div class="normalpara faq-answer">
-              Agencies provide expertise, tools, and strategies to maximize your
-              online reach and ROI.
+              As a <strong>digital marketing agency,</strong> our comprehensive suite of digital marketing services includes:​
+              <ul>
+                <li><strong>design and development-</strong> our team ensures your business website is developed with complete facility to rank on top of SERP.</li>
+                <li><strong>design and development-</strong> our team ensures your business website is developed with complete facility to rank on top of SERP.</li>
+                <li><strong>design and development-</strong> our team ensures your business website is developed with complete facility to rank on top of SERP.</li>
+                <li><strong>design and development-</strong> our team ensures your business website is developed with complete facility to rank on top of SERP.</li>
+                <li><strong>design and development-</strong> our team ensures your business website is developed with complete facility to rank on top of SERP.</li>
+                <li><strong>design and development-</strong> our team ensures your business website is developed with complete facility to rank on top of SERP.</li>
+              </ul>
             </div>
           </div>
 
           <div class="normalpara faq-item">
             <div class="faq-question">
-              3. What are the benefits of digital marketing for my business?
+              3. How do you measure the success of a digital marketing campaign?
             </div>
             <div class="faq-answer">
-              Increased brand visibility, targeted advertising, measurable
-              results, and better customer engagement.
+              We utilize key performance indicators (KPIs) such as website traffic, conversion rates, click-through rates (CTR), return on investment (ROI), and engagement metrics to assess the effectiveness of our digital marketing campaigns. Regular reporting and analysis allow us to optimize strategies for continuous improvement.​
+
             </div>
           </div>
 
           <div class="faq-item">
             <div class="faq-question">
-              4. How does SEO work to grow my business?
+              4. How long does it take to see results from digital marketing efforts?
             </div>
             <div class="normalpara faq-answer">
-              SEO improves your website's visibility on search engines, driving
-              more organic traffic and potential leads.
+              The timeframe for observing results varies based on the specific strategies employed. For instance, SEO efforts may take several months to yield significant improvements, while PPC advertising can generate immediate traffic. We focus on both short-term gains and long-term growth to ensure sustainable success.​
             </div>
           </div>
 
           <div class="faq-item">
             <div class="faq-question">
-              5. What services do digital marketing agencies provide?
+              5. Why should I choose your digital marketing agency over others?
             </div>
             <div class="normalpara faq-answer">
-              SEO, PPC, social media marketing, email campaigns, content
-              creation, branding, and more.
+              Our agency stands out due to our personalized approach, industry expertise, and commitment to delivering measurable results. We tailor strategies to align with your unique business goals, stay abreast of the latest digital trends, and provide transparent reporting to keep you informed every step of the way.
             </div>
           </div>
         </div>
@@ -536,5 +559,25 @@
       });
       // faq open close End
     </script>
+    <script>
+      const tabs = document.querySelectorAll(".cashStudy_btn_con .normalBtn");
+      const blocks = document.querySelectorAll(".cashStudy_block");
+    
+      tabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+          // Remove active class from all buttons
+          tabs.forEach(btn => btn.classList.remove("active"));
+          // Hide all blocks
+          blocks.forEach(block => block.classList.remove("active"));
+    
+          // Activate clicked button
+          tab.classList.add("active");
+          // Show corresponding block
+          const targetId = tab.getAttribute("data-tab");
+          document.getElementById(targetId).classList.add("active");
+        });
+      });
+    </script>
+    
   </body>
 </html>
