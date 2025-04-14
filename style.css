@@ -467,6 +467,10 @@ body {
   overflow: hidden;
   padding: 15px;
   border: 1px solid #ddd;
+  transition: transform 0.3s ease;
+}
+.testimonial_card:hover .testimonial_card_user_img{
+  transform: translateY(-5px);
 }
 .testimonial_card_user_img img {
   width: 100%;
