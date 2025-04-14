@@ -218,7 +218,7 @@ body {
 /* What Makes Us Different? start */
 
 #whatMakesDifferent {
-  border-top: 1px solid #ddd;
+  background-color: #F4F4F4;
 }
 .whatMakesDifferent_con {
   margin: 0 auto;
@@ -354,7 +354,9 @@ body {
 /* Our Services End */
 
 /* Our Process Section Start */
-
+#ourProcess{
+  background: linear-gradient(to bottom, #f4f4f4 0%, #ffffff 100%);  
+}
 #ourProcess .ourProcess_con .heading_2 {
   text-align: center;
 }
