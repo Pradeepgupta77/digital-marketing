@@ -421,6 +421,10 @@ body {
     color: #000;
     text-align: center;
 }
+.testimonials_con>.normalpara{
+  text-align: center;
+  margin-top: 15px;
+} 
  .testimonials_con .slider{
     margin-top: 60px;
     padding: 10px;
