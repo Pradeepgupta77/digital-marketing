@@ -19,26 +19,30 @@ body {
 /* main section start */
 
 /* absolute btn start */
-main{
+main {
   position: relative;
 }
-#absolute_contact_btn{
+#absolute_contact_btn {
   position: absolute;
-    top: 50vh;
-    right: -44px;
-    rotate: 270deg;
-    z-index: 1;
-    background-color: #FF7A28;
-    font-size: 16px;
-    font-weight: 400;
-    display: inline-block;
-    width: auto;
-    padding: 12px 36px;
-    color: #FFF;
-    height: auto;
-    border-radius: 8px 8px 0 0;
-    transition: opacity 0.3s ease;
-    /* display: none; */
+  top: 50vh;
+  right: -44px;
+  rotate: 270deg;
+  z-index: 1;
+  background-color: #ff7a28;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  width: auto;
+  padding: 12px 36px;
+  color: #fff;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  transition: opacity 0.3s ease;
+  visibility: hidden;
+}
+#absolute_contact_btn.show {
+  opacity: 1;
+  visibility: visible;
 }
 /* absolute btn End */
 /* hero section start*/
@@ -143,10 +147,9 @@ main{
   padding: 30px;
 }
 
-
 #digitalMarketingForm input,
 #digitalMarketingForm select,
-#digitalMarketingPopupForm textarea ,
+#digitalMarketingPopupForm textarea,
 #digitalMarketingForm textarea {
   width: 100%;
   padding: 12px 15px;
@@ -162,13 +165,13 @@ main{
   transform-origin: 0 0;
 }
 
-#digitalMarketingPopupForm button ,
+#digitalMarketingPopupForm button,
 #digitalMarketingForm button {
   background-color: #ff7a28;
   color: white;
 }
 
-#digitalMarketingPopupForm button:hover ,
+#digitalMarketingPopupForm button:hover,
 #digitalMarketingForm button:hover {
   background-color: #e65a12;
 }
@@ -182,7 +185,7 @@ main{
   justify-content: center;
   flex-direction: column;
 }
-.ourClient_con>p {
+.ourClient_con > p {
   margin-top: 15px;
   text-align: center;
 }
@@ -245,7 +248,7 @@ main{
 /* What Makes Us Different? start */
 
 #whatMakesDifferent {
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
 }
 .whatMakesDifferent_con {
   margin: 0 auto;
@@ -381,14 +384,14 @@ main{
 
 .ourService_card:hover {
   /* background-color: #ddd; */
-  border-bottom: 3px solid #FF7A28;
+  border-bottom: 3px solid #ff7a28;
 }
 
 /* Our Services End */
 
 /* Our Process Section Start */
-#ourProcess{
-  background: linear-gradient(to bottom, #f4f4f4 0%, #ffffff 100%);  
+#ourProcess {
+  background: linear-gradient(to bottom, #f4f4f4 0%, #ffffff 100%);
 }
 #ourProcess .ourProcess_con .heading_2 {
   text-align: center;
@@ -502,7 +505,7 @@ main{
   border: 1px solid #ddd;
   transition: transform 0.3s ease;
 }
-.testimonial_card:hover .testimonial_card_user_img{
+.testimonial_card:hover .testimonial_card_user_img {
   transform: translateY(-5px);
 }
 .testimonial_card_user_img img {
@@ -648,7 +651,7 @@ main{
   overflow: hidden;
   border-radius: 0 0 12px 12px;
 }
-.tabcontent>img{
+.tabcontent > img {
   width: 100%;
 }
 
@@ -795,7 +798,7 @@ main{
   border-radius: 16px;
   padding: 25px;
 }
-.popup_container{
+.popup_container {
   width: 100%;
   max-width: 900px;
 }
@@ -817,7 +820,7 @@ main{
   gap: 15px;
   padding: 30px;
 }
-#digitalMarketingPopupForm input{
+#digitalMarketingPopupForm input {
   width: 48%;
   padding: 12px 15px;
   border: 1px solid #ddd;
@@ -843,7 +846,7 @@ main{
 /* footer section start  */
 #footer_sec {
   background: #f9f9f9;
-  border-top: 3px solid #FF7A28;
+  border-top: 3px solid #ff7a28;
 }
 .footer_con .footer_top {
   width: 100%;
@@ -924,68 +927,68 @@ main{
 /* Responsiveness Start */
 
 @media screen and (max-width: 1024px) {
-/* Hero Section Responsive Start */
+  /* Hero Section Responsive Start */
 
-#hero .hero_left h1 {
-  font-size: 36px;
-}
+  #hero .hero_left h1 {
+    font-size: 36px;
+  }
 
-#hero .hero_left ul li img {
-  width: 16px;
-}
+  #hero .hero_left ul li img {
+    width: 16px;
+  }
 
-#hero .hero_left .star_image {
-  width: 100px;
-}
+  #hero .hero_left .star_image {
+    width: 100px;
+  }
 
-#hero .hero_left > p {
-  margin-top: 10px;
-}
+  #hero .hero_left > p {
+    margin-top: 10px;
+  }
 
-#hero .hero_form_con h3 {
-  font-size: 20px !important;
-}
+  #hero .hero_form_con h3 {
+    font-size: 20px !important;
+  }
 
-#digitalMarketingForm {
-  gap: 10px;
-  padding: 20px;
-}
+  #digitalMarketingForm {
+    gap: 10px;
+    padding: 20px;
+  }
 
-#ourProcess .container .ourProcess_cont_main .ourProcess_card {
-  min-width: 175px;
-  min-height: 330px;
-}
+  #ourProcess .container .ourProcess_cont_main .ourProcess_card {
+    min-width: 175px;
+    min-height: 330px;
+  }
 
-#ourProcess .container .ourProcess_cont_main .ourProcess_card .step_label {
-  width: 120px;
-}
+  #ourProcess .container .ourProcess_cont_main .ourProcess_card .step_label {
+    width: 120px;
+  }
 
-#ourService .ourService_card_con .ourService_card .ourService_card_img {
-  height: 200px;
-  min-width: 200px;
-}
+  #ourService .ourService_card_con .ourService_card .ourService_card_img {
+    height: 200px;
+    min-width: 200px;
+  }
 
-#whatMakesDifferent .whatMakesDifferent_features {
-  min-height: 230px;
-}
+  #whatMakesDifferent .whatMakesDifferent_features {
+    min-height: 230px;
+  }
 
-#testimonials .testimonials_con .slider {
-  width: 930px;
-}
+  #testimonials .testimonials_con .slider {
+    width: 930px;
+  }
 
-#testimonials .slider .testimonial_card{
-  min-height:480px;
-}
+  #testimonials .slider .testimonial_card {
+    min-height: 480px;
+  }
 
-#testimonials .testimonials_con .slider {
-  margin-top: 20px;
-}
+  #testimonials .testimonials_con .slider {
+    margin-top: 20px;
+  }
 
-#strategyCall .strategy_con .strategy_left img {
-  width: 450px;
-}
+  #strategyCall .strategy_con .strategy_left img {
+    width: 450px;
+  }
 
-/* Hero Section Responsive End */
+  /* Hero Section Responsive End */
 }
 
 /* Responsiveness End */
