@@ -842,6 +842,38 @@ main {
 #fade .popup_close.fade_close span {
   font-size: 32px;
 }
+#fade .hero_right .hero_form_con {
+  box-shadow: none;
+  padding: 0;
+  max-width: inherit;
+}
+#fade .hero_form_con h3 br {
+  display: none;
+}
+#fade .hero_form_con h3 {
+  border: none;
+  padding: 0;
+  margin: 0 0 30px;
+}
+#fade #digitalMarketingPopupForm {
+  padding: 0;
+}
+#fade .hero_left .hero_logo {
+  width: 200px;
+}
+#fade .hero_con .hero_right{
+  width: 55%;
+}
+#fade .heading_2 {
+  font-size: 32px;
+}
+#fade .hero_left p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+#digitalMarketingPopupForm button{
+  width: 100%;
+}
 /* section popup End */
 
 /* footer section start  */
