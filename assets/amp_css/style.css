@@ -575,6 +575,9 @@ main {
   justify-content: center;
   gap: 20px;
 }
+.tab .tablinks{
+  width: 33.33%;
+}
 .cashStudy_btn_con button {
   text-transform: capitalize;
   font-weight: 400;
