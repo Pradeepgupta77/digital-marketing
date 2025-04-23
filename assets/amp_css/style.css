@@ -27,12 +27,13 @@ body {
 
 /* main section start */
 
-/* absolute btn start */
+
 
 main {
   position: relative;
 }
 
+/* absolute btn start */
 #absolute_contact_btn {
   position: absolute;
 
@@ -74,6 +75,38 @@ main {
 }
 
 /* absolute btn End */
+
+/* whatsApp btn start */
+/* 
+#absolute_whatsapp_btn {
+  position: fixed;
+  right: 35px;
+  bottom: 35px;
+  border-radius: 50%;
+  background: green;
+  z-index: 1;
+  animation: pulse 2s infinite;
+  padding: 8px;
+}
+#absolute_whatsapp_btn i{
+  color: #fff;
+  font-size: 40px;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 128, 0, 0.7);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 15px rgba(0, 128, 0, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 128, 0, 0);
+  }
+} */
+/* whatsApp btn End */
 
 /* hero section start*/
 
@@ -1533,7 +1566,7 @@ main {
   }
   #hero .hero_left ul li img:nth-child(3) {
     width: 90px;
-  }
+  }  
 }
 @media screen and (max-width: 932px) {
   #hero .hero_left h1 {

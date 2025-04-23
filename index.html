@@ -25,6 +25,12 @@
       <a id="absolute_contact_btn" class="scroll-link" href="#hero">Contact</a>
       <!-- absolute btn start -->
 
+      <!-- whatsApp btn Start -->
+      <!-- <a data-scroll-section id="absolute_whatsapp_btn" target="_blank" href="https://wa.link/frutt4"
+      ><i class="ri-whatsapp-line"></i
+    ></a> -->
+      <!-- whatsApp btn Start -->
+
       <!-- hero section start -->
       <section data-scroll-section id="hero" class="sec">
         <div class="container hero_con">
@@ -90,10 +96,13 @@
                 On A Discovery Call
               </h3>
               <form id="digitalMarketingForm" action="#" method="POST">
+
+                <input type="text" class="Form_type" value="Banner" style="display: none;">
+
                 <input
                   type="text"
                   name="name"
-                  id="digitalMarketingName"
+                  class="Name"
                   placeholder="Name"
                   required
                 />
@@ -101,7 +110,7 @@
                 <input
                   type="email"
                   name="email"
-                  id="digitalMarketingEmail"
+                  class="Email"
                   placeholder="Email"
                   required
                 />
@@ -109,13 +118,13 @@
                 <input
                   type="tel"
                   name="phone"
-                  id="digitalMarketingPhone"
+                  class="Phone"
                   placeholder="Phone"
                   pattern="[1-9]{1}[0-9]{9}"
                   required
                 />
 
-                <select id="digitalMarketingService" required>
+                <select class="Service" required>
                   <option value="">-- Select Service --</option>
                   <option value="App Development">
                     Complete Digital Marketing Solutions
@@ -135,7 +144,7 @@
                 </select>
 
                 <textarea
-                  id="digitalMarketingMessage"
+                  class="Message"
                   name="message"
                   placeholder="Message"
                   rows="4"
@@ -1092,10 +1101,13 @@
                   Scale Your Growth Together
                 </h3>
                 <form id="digitalMarketingPopupForm" action="#" method="POST">
+
+                  <input type="text" class="Form_type" value="Popup" style="display: none;">
+
                   <input
                     type="text"
                     name="name"
-                    id="digitalMarketingPopupName"
+                    class="Name"
                     placeholder="Name"
                     required
                   />
@@ -1103,7 +1115,7 @@
                   <input
                     type="email"
                     name="email"
-                    id="digitalMarketingPopupEmail"
+                    class="Email"
                     placeholder="Email"
                     required
                   />
@@ -1111,7 +1123,7 @@
                   <input
                     type="tel"
                     name="phone"
-                    id="digitalMarketingPopupPhone"
+                    class="Phone"
                     placeholder="Phone"
                     pattern="[1-9]{1}[0-9]{9}"
                     required
@@ -1120,12 +1132,12 @@
                   <input
                     type="url"
                     name="Website"
-                    id="digitalMarketingPopupWeb"
+                    id="Website"
                     placeholder="Website"
                   />
 
                   <textarea
-                    id="digitalMarketingPopupMessage"
+                    class="Message"
                     name="message"
                     placeholder="Message"
                     rows="4"
@@ -1399,29 +1411,35 @@
       digitalMarketingForm.addEventListener("submit", async (e) => {
         e.preventDefault();
 
-        const digitalMarketingName = document.getElementById(
-          "digitalMarketingName"
-        ).value;
-        const digitalMarketingEmail = document.getElementById(
-          "digitalMarketingEmail"
-        ).value;
-        const digitalMarketingPhone = document.getElementById(
-          "digitalMarketingPhone"
-        ).value;
-        const digitalMarketingService = document.getElementById(
-          "digitalMarketingService"
-        ).value;
-        const digitalMarketingMessage = document.getElementById(
-          "digitalMarketingMessage"
-        ).value;
+        
+        
+        let Form_type = document.getElementsByClassName(
+          "Form_type"
+        )[0].value;
+        let Name = document.getElementsByClassName(
+          "Name"
+        )[0].value;
+        let Email = document.getElementsByClassName(
+          "Email"
+        )[0].value;
+        let Phone = document.getElementsByClassName(
+          "Phone"
+        )[0].value;
+        let Service = document.getElementsByClassName(
+          "Service"
+        )[0].value;
+        let Message = document.getElementsByClassName(
+          "Message"
+        )[0].value;
 
         try {
-          await addDoc(collection(db, "digitalMarketingLandingPageForm"), {
-            digitalMarketingName,
-            digitalMarketingEmail,
-            digitalMarketingPhone,
-            digitalMarketingService,
-            digitalMarketingMessage,
+          await addDoc(collection(db, "Digital-Marketing"), {
+            Form_type,
+            Name,
+            Email,
+            Phone,
+            Service,
+            Message,
             timestamp: new Date(),
           });
           window.location.href = "https://amplivista.com/digital-marketing-agency/thank-you.php";
@@ -1440,29 +1458,33 @@
       digitalMarketingPopupForm.addEventListener("submit", async (e) => {
         e.preventDefault();
 
-        const digitalMarketingPopupName = document.getElementById(
-          "digitalMarketingPopupName"
+        let Form_type = document.getElementsByClassName(
+          "Form_type"
+        )[1].value;
+        let Name = document.getElementsByClassName(
+          "Name"
+        )[1].value;
+        let Email = document.getElementsByClassName(
+          "Email"
+        )[1].value;
+        let Phone = document.getElementsByClassName(
+          "Phone"
+        )[1].value;
+        let Website = document.getElementById(
+          "Website"
         ).value;
-        const digitalMarketingPopupEmail = document.getElementById(
-          "digitalMarketingPopupEmail"
-        ).value;
-        const digitalMarketingPopupPhone = document.getElementById(
-          "digitalMarketingPopupPhone"
-        ).value;
-        const digitalMarketingPopupWeb = document.getElementById(
-          "digitalMarketingPopupWeb"
-        ).value;
-        const digitalMarketingPopupMessage = document.getElementById(
-          "digitalMarketingPopupMessage"
-        ).value;
+        let Message = document.getElementsByClassName(
+          "Message"
+        )[1].value;
 
         try {
-          await addDoc(collection(db, "digitalMarketingLandingPagePopupForm"), {
-            digitalMarketingPopupName,
-            digitalMarketingPopupEmail,
-            digitalMarketingPopupPhone,
-            digitalMarketingPopupWeb,
-            digitalMarketingPopupMessage,
+          await addDoc(collection(db, "Digital-Marketing"), {
+            Form_type,
+            Name,
+            Email,
+            Phone,
+            Website,
+            Message,
             timestamp: new Date(),
           });
           window.location.href = "https://amplivista.com/digital-marketing-agency/thank-you.php";
