@@ -117,6 +117,80 @@ main {
 
 /* whatsApp btn End */
 
+/* mobile flowting btn start  */
+.floating-btn-container {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  z-index: 999;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+  display: none;
+}
+
+.main-btn {
+  background-color: #fda203;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.action-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(0);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  background: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.action-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.show .whatsapp-btn {
+  transform: translateY(-70px);
+  opacity: 1;
+  pointer-events: auto;
+  background: #008000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whatsapp-btn i {
+  color: #fff;
+  font-size: 36px;
+}
+.show .call-btn {
+  transform: translateY(-140px);
+  opacity: 1;
+  pointer-events: auto;
+  background: #a80ac7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.call-btn i {
+  color: #fff;
+  font-size: 32px;
+}
+/* mobile flowting btn End  */
+
+
 /* hero section start*/
 
 #hero {
@@ -238,9 +312,8 @@ main {
 .hero_right .hero_form_con {
   background: #fff;
 
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-
   border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 
   max-width: 450px;
 
@@ -1576,6 +1649,12 @@ main {
   #hero .hero_left ul li img:nth-child(3) {
     width: 90px;
   }  
+  #absolute_whatsapp_btn{
+    display: none;
+  }
+  .floating-btn-container{
+    display: block;
+  }
 }
 @media screen and (max-width: 932px) {
   #hero .hero_left h1 {
