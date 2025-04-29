@@ -1815,7 +1815,10 @@ main {
   }
   #hero .hero_con .hero_left {
     width: 100%;
-    /* align-items: center; */
+    align-items: center;
+  }
+  #hero .hero_left ul {
+    width: 100%;
   }
   #hero .hero_con .hero_right {
     width: 100%;
