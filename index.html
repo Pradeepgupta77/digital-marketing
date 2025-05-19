@@ -78,7 +78,7 @@
             />
             <h1 class="fade-effect" fade-time="3" fade-direction="left">
               A <span>Digital Marketing Agency</span> Trusted by
-              <span>Global Brands & Growing Startups.</span>
+              <span>Global Brands & Growing Startups</span>
             </h1>
             <p
               class="normalpara fade-effect"
@@ -159,6 +159,7 @@
                   name="name"
                   class="Name"
                   placeholder="Name"
+                  pattern=".*\S.*"
                   required
                 />
 
@@ -202,7 +203,7 @@
                   class="Message"
                   name="message"
                   placeholder="Message"
-                  rows="4"
+                  rows="4"                  
                   required
                 ></textarea>
 
@@ -654,7 +655,7 @@
             We being the Top Rated Digital Marketing Agency, our Strategic
             digital marketing process is a data-driven approach designed to
             attract, engage, and convert the right audience through tailored
-            campaigns
+            campaigns.
           </p>
           <div class="ourProcess_cont_main">
             <div
@@ -1084,7 +1085,7 @@
             </p>
           </div>
 
-          <div class="faq-item fade-effect" fade-time="3" fade-direction="top">
+          <div class="faq-item fade-effect" fade-time="3" fade-direction="zoom">
             <div class="faq-question">
               1. What is digital marketing and how can it benefit my business?
             </div>
@@ -1098,7 +1099,7 @@
             </div>
           </div>
 
-          <div class="faq-item fade-effect" fade-time="4" fade-direction="top">
+          <div class="faq-item fade-effect" fade-time="3" fade-direction="zoom">
             <div class="faq-question">
               2. Which digital marketing services do you offer?
             </div>
@@ -1140,7 +1141,7 @@
             </div>
           </div>
 
-          <div class="faq-item fade-effect" fade-time="5" fade-direction="top">
+          <div class="faq-item fade-effect" fade-time="3" fade-direction="zoom">
             <div class="faq-question">
               3. How do you measure the success of a digital marketing campaign?
             </div>
@@ -1154,7 +1155,7 @@
             </div>
           </div>
 
-          <div class="faq-item fade-effect" fade-time="6" fade-direction="top">
+          <div class="faq-item fade-effect" fade-time="3" fade-direction="zoom">
             <div class="faq-question">
               4. How long does it take to see results from digital marketing
               efforts?
@@ -1168,7 +1169,7 @@
             </div>
           </div>
 
-          <div class="faq-item fade-effect" fade-time="7" fade-direction="top">
+          <div class="faq-item fade-effect" fade-time="3" fade-direction="zoom">
             <div class="faq-question">
               5. Why should I choose your digital marketing agency over others?
             </div>
@@ -1223,6 +1224,7 @@
                     name="name"
                     class="Name"
                     placeholder="Name"
+                    pattern=".*\S.*"
                     required
                   />
 
@@ -1543,6 +1545,7 @@
         let Service = document.getElementsByClassName("Service")[0].value;
         let Message = document.getElementsByClassName("Message")[0].value;
 
+        Name = Name.trim();
         try {
           await addDoc(collection(db, "Digital-Marketing"), {
             Form_type,
@@ -1576,6 +1579,8 @@
         let Phone = document.getElementsByClassName("Phone")[1].value;
         let Website = document.getElementById("Website").value;
         let Message = document.getElementsByClassName("Message")[1].value;
+
+        Name = Name.trim();
 
         try {
           await addDoc(collection(db, "Digital-Marketing"), {
