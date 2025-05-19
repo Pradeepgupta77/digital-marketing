@@ -45,7 +45,8 @@ import {
             timestamp: new Date(),
           });
           window.location.href =
-            "https://amplivista.com/digital-marketing-agency/thank-you.php";
+            // "https://amplivista.com/digital-marketing-agency/thank-you.php";
+            "https://amplivista.com/";
           digitalMarketingForm.reset();
         } catch (err) {
           console.error("Error adding document: ", err);
@@ -81,7 +82,8 @@ import {
             timestamp: new Date(),
           });
           window.location.href =
-            "https://amplivista.com/digital-marketing-agency/thank-you.php";
+            // "https://amplivista.com/digital-marketing-agency/thank-you.php";
+             "https://amplivista.com/";
           digitalMarketingPopupForm.reset();
         } catch (err) {
           console.error("Error adding document: ", err);
