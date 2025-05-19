@@ -203,7 +203,7 @@
                   class="Message"
                   name="message"
                   placeholder="Message"
-                  rows="4"                  
+                  rows="4"
                   required
                 ></textarea>
 
@@ -1039,7 +1039,7 @@
               fade-time="3"
               fade-direction="right"
             >
-              Your Competitors Are Already Growing - <br class="remove_br">
+              Your Competitors Are Already Growing - <br class="remove_br" />
               Are You?
             </h2>
             <p
@@ -1048,7 +1048,7 @@
               fade-direction="right"
             >
               Get a <strong>FREE consultation</strong> and discover how our
-              online<br class="remove_br">
+              online<br class="remove_br" />
               marketing agency can 10X your business.
             </p>
             <a
@@ -1424,11 +1424,14 @@
         scroll = new LocomotiveScroll({
           el: scrollContainer,
           smooth: true,
+          lerp: 0.1, // default is around 0.1
           smartphone: {
             smooth: true,
+            lerp: 0.2, // make it faster on mobile
           },
           tablet: {
             smooth: true,
+            lerp: 0.15,
           },
         });
 
