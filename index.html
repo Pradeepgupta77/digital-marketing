@@ -33,7 +33,7 @@
     />
   </head>
   <body>
-    <main data-scroll-container>
+    <main >
       <!-- absolute btn start -->
       <a id="absolute_contact_btn" class="scroll-link" href="#hero">Contact</a>
       <!-- absolute btn start -->
@@ -65,7 +65,7 @@
       <!-- mobile flowting btn End  -->
 
       <!-- hero section start -->
-      <section data-scroll-section id="hero" class="sec">
+      <section id="hero" class="sec">
         <div class="container hero_con">
           <div class="hero_left">
             <img
@@ -224,7 +224,7 @@
       <!-- hero section End -->
 
       <!-- Our Clients section start -->
-      <section data-scroll-section id="ourClient" class="sec">
+      <section  id="ourClient" class="sec">
         <div class="container ourClient_con">
           <h2 class="heading_2 fade-effect" fade-time="2" fade-direction="top">
             Our Clients
@@ -421,7 +421,7 @@
       <!-- Our Clients section start -->
 
       <!--  What Makes Us Different? start -->
-      <section data-scroll-section id="whatMakesDifferent" class="sec">
+      <section  id="whatMakesDifferent" class="sec">
         <div class="container whatMakesDifferent_con">
           <div
             class="whatMakesDifferent_first_cont fade-effect"
@@ -559,7 +559,7 @@
       <!--  What Makes Us Different? End -->
 
       <!--  Our Services Start -->
-      <section data-scroll-section id="ourService" class="sec">
+      <section  id="ourService" class="sec">
         <div class="container ourService_con">
           <h2 class="heading_2 fade-effect" fade-time="2" fade-direction="top">
             Our Full Digital Marketing Services
@@ -646,7 +646,7 @@
       <!--  Our Services End -->
 
       <!-- Our Process section start -->
-      <section data-scroll-section id="ourProcess" class="sec">
+      <section  id="ourProcess" class="sec">
         <div class="container ourProcess_con">
           <h2 class="heading_2 fade-effect" fade-time="2" fade-direction="top">
             Our Process That Turns Clicks Into Revenue
@@ -779,7 +779,7 @@
       <!-- Our Process section end -->
 
       <!-- Testimonials start -->
-      <section data-scroll-section id="testimonials" class="sec">
+      <section  id="testimonials" class="sec">
         <div class="container testimonials_con">
           <h2 class="heading_2 fade-effect" fade-time="2" fade-direction="top">
             What Our Customer Say!
@@ -975,7 +975,7 @@
       <!-- Testimonials End -->
 
       <!-- cash study Start -->
-      <section data-scroll-section id="cashStudy" class="sec">
+      <section  id="cashStudy" class="sec">
         <div class="container cashStudy_con">
           <h2 class="heading_2 fade-effect" fade-time="2" fade-direction="top">
             How Top Brands Drive 10X Results with Us
@@ -1024,7 +1024,7 @@
       <!-- cash study End -->
 
       <!-- Strategy section start -->
-      <section data-scroll-section id="strategyCall">
+      <section  id="strategyCall">
         <div class="container strategy_con">
           <div class="strategy_left">
             <img
@@ -1064,7 +1064,7 @@
       <!-- Strategy section end -->
 
       <!-- Section  faq - start -->
-      <section data-scroll-section id="faq" class="sec">
+      <section  id="faq" class="sec">
         <div class="container faq_con">
           <div class="faq-heading">
             <!-- <h3 class="heading_3"><span>All</span> FAQ's</h3> -->
@@ -1278,7 +1278,7 @@
       <!-- section popup End  -->
 
       <!-- footer section start -->
-      <footer data-scroll-section id="footer_sec" class="sec">
+      <footer  id="footer_sec" class="sec">
         <div class="container footer_con">
           <div class="footer_top">
             <div class="footer_top_logo">
@@ -1407,65 +1407,6 @@
           transition: "all 0.3s",
           closebutton: true,
         });
-      });
-    </script>
-
-    <!-- Locomotive Scroll CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
-
-    <script>
-      let scroll;
-
-      window.addEventListener("load", () => {
-        const scrollContainer = document.querySelector(
-          "[data-scroll-container]"
-        );
-
-        scroll = new LocomotiveScroll({
-          el: scrollContainer,
-          smooth: true,
-          lerp: 0.2, // default is around 0.1
-          smartphone: {
-            smooth: true,
-            lerp: 0.3, // make it faster on mobile
-          },
-          tablet: {
-            smooth: true,
-            lerp: 0.25,
-          },
-        });
-
-        // Contact Button Show/Hide on Scroll
-        scroll.on("scroll", (args) => {
-          const scrollY = args.scroll.y;
-          const windowHeight = window.innerHeight;
-          const $btn = document.getElementById("absolute_contact_btn");
-
-          if (scrollY >= windowHeight) {
-            $btn.classList.add("show");
-          } else {
-            $btn.classList.remove("show");
-          }
-        });
-
-        // Anchor link smooth scroll
-        document.querySelectorAll(".scroll-link").forEach((link) => {
-          link.addEventListener("click", (e) => {
-            e.preventDefault();
-            const targetId = link.getAttribute("href");
-            scroll.scrollTo(targetId);
-          });
-        });
-
-        // Update scroll on resize
-        window.addEventListener("resize", () => {
-          scroll.update();
-        });
-
-        // Extra safety update for media/content loads
-        setTimeout(() => {
-          scroll.update();
-        }, 1500);
       });
     </script>
 

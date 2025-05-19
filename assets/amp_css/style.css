@@ -18,12 +18,11 @@ body {
 
   font-family: "Poppins", Sans-serif;
 
-  overflow: hidden;
+ overflow-x: hidden;
+ overflow-y: auto;
 }
 
-[data-scroll-container] {
-  overflow: visible; /* very important! */
-}
+
 
 /* main section start */
 
